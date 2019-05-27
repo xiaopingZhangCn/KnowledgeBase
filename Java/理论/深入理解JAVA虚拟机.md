@@ -112,7 +112,16 @@ Java堆中将会划分出一块内存来作为句柄池，reference中存储的�
     <br />    <small> 句柄方式访问对象 </small>
 </p>
 
-- 
+- 使用直接指针访问
+
+Java堆对象的布局就必须考虑如何访问类型数据的相关信息，而refernce中存储的就是对象的地址。
+
+优势：速度更快，节省了一次指针定位的时间开销，由于对象的访问在Java中非常频繁，因此这类开销积少成多后也是一项非常可观的执行成本。
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/xiaopingZhangCn/KnowledgeBase/master/Java/resource/123434123123.jpg" width="60%">
+    <br />    <small> 直接指针方式访问对象 </small>
+</p>
 
 ## java垃圾收集器
 
