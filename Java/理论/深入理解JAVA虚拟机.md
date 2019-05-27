@@ -108,8 +108,8 @@ Java堆中将会划分出一块内存来作为句柄池，reference中存储的�
 优势：reference中存储的是稳定的句柄地址，在对象被移动（垃圾收集时移动对象是普遍的行为）时，只会改变句柄中的实例数据指针，而reference本身不需要修改。
 
 <p align="center">
-    <img src="____" width="60%">
-    <br />    <small> tittle </small>
+    <img src="https://github.com/xiaopingZhangCn/KnowledgeBase/blob/master/Java/resource/687309-20180430172222987-651423543.jpg" width="60%" />
+    <br />    <small> 句柄方式访问对象 </small>
 </p>
 
 - 
